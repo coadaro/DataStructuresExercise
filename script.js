@@ -2,15 +2,16 @@
 const jedi=[];
 
 //1b
-jedi [jedi.length]='luke';
+jedi[0]='Luke';
+// jedi [jedi.length]='luke';
 console.log(jedi);
 
 //1c
-jedi.push('obi-won kenobi');
+jedi.push('Obi-Won Kenobi');
 console.log(jedi);
 
 //1d
-jedi.unshift('yoda');
+jedi.unshift('Yoda');
 console.log(jedi);
 
 //1e
@@ -18,6 +19,10 @@ console.log(jedi[1]);
 
 //1f
 jedi.pop();
+console.log(jedi);
+
+//1g
+jedi.shift();
 console.log(jedi);
 
 //2a
@@ -53,29 +58,31 @@ console.log(droids);
 //bonus
 //4
 console.log("Darth Vader"[6]);
+//or
+console.log(starWarsVillains[0][6]);
 
 //5
 console.log(starWarsVillains.slice(-4,-3));
 
 //6a
-const starWarsMovies={
-    one:{
+const starWarsMovies=[
+    {
         episodeOne:'The Phantom Menace',
         episodeTwo:'Attack of the Clones',
         episodeThree:'Revenge of the Sith'
     },
-    two:{
+    {
         episodeFour:'A New Hope',
         episodeFive:'The Empire Strikes Back',
         episodeSix:'Return of the Jedi'
     },
-    three:{
+    {
         episodeSeven:'The Force Awakens',
         episodeEight:'The Last Jedi',
         episodeNine:'The Rise of Skywalker'
     }
-};
+];
 
 //6b
-starWarsMovies.splice();
+starWarsMovies.splice(1,0,'Solo','Rogue One');
 console.log(starWarsMovies);
